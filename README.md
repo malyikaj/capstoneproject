@@ -8,18 +8,18 @@ The styling of this app relies on Bootstrap. It acceses a RESTful API from React
  
 
 Backend 
- Uses MySql as a SQL database
- Uses Spring Tool Suite (STS) for Spring Boot application w/Maven as a build tool
- Uses Apache Tomcat as a web server
- Uses MVC architecture
- API
+ -Uses MySql as a SQL database
+ -Uses Spring Tool Suite (STS) for Spring Boot application w/Maven as a build tool
+ -Uses Apache Tomcat as a web server
+ -Uses MVC architecture
+ -API
  
  
 
 Front End 
- Uses React with Router functionality
- Uses Bootstrap
- CSS
- Uses Axios
- API
+ -Uses React with Router functionality
+ -Uses Bootstrap
+ -CSS
+ -Uses Axios
+ -API
  
