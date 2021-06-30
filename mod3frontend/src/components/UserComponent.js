@@ -8,9 +8,27 @@ class UserComponent extends React.Component {
         this.state = {
             users:[]
         }
+        this.addPersons = this.addPersons.bind(this);
+        this.deletePersons = this.deletePersons.bind(this);
+        this.refreshData = this.refreshData.bind(this);
     }
     //Lifecycle method that will implement immediately once component is mounted
     componentDidMount(){
+       this.refreshData();
+    }
+
+    addPersons(){
+        this.props.history.push('/add-persons');
+    }
+    
+    deletePersons(event){
+        UserService.deleteUsersById(event.target.id).then((response) => {
+            console.log(response);
+            this.refreshData();
+        });
+    }
+
+    refreshData(){
         UserService.getUsers().then((response) => {
             this.setState({ users: response.data});
         });
@@ -21,8 +39,10 @@ class UserComponent extends React.Component {
         return(
             <div>
                 <h1 className = "text-center"> Users List </h1>
-                
-                <table className = "table table-striped">
+                <div className ="row">
+                    <button className="btn btn-primary" onClick={this.addPersons}> Add to List</button>
+                </div>
+                <table className = "table table-striped table-bordered">
                     <thead>
                         <tr>
                             <td>User Id</td>
@@ -43,17 +63,27 @@ class UserComponent extends React.Component {
                                     <td>{user.last_name}</td>
                                     <td>{user.user_name}</td>
                                     <td>{user.user_email}</td>
-                                    <td><button type="button" class="btn btn-outline-secondary">Remove</button></td>
+                                    <td><button id= {user.id} type="button" className="btn btn-outline-primary " onClick={this.deletePersons}>Remove</button></td>
                                 </tr>  
                             )
                             
+
+
+
                         }
+                        
                     </tbody>
                 </table>
             </div>
         )
             
     }
+
+
+
+
+
+
 }
 
 export default UserComponent;

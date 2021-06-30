@@ -8,6 +8,10 @@ class UserService {
         return axios.get(apiURL);
     }
 
+    deleteUsersById(id){
+        return axios.delete (apiURL + "/" + id);
+    }
+
 }
 
 export default new UserService();
