@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import UserService from '../services/UserService';
+// import UserService from '../services/UserService';
 
 
 class CreateUserComponent extends React.Component {
@@ -91,7 +91,7 @@ class CreateUserComponent extends React.Component {
                                     </br>
 
                                     <button className= "btn btn-success" onClick={this.savePersons}>Save</button>
-                                    <button className="btn btn-danger" onClick={this.cancel.bind(this)} style={{marginLeft: "10px"}}>Cancel</button>
+                                    <button className="btn btn-danger" style={{marginLeft: "10px"}}>Cancel</button>
 
                                 </form>
                             </div>

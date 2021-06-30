@@ -15,7 +15,7 @@ class HeaderComponent extends React.Component {
             <div>
                 <header>
                     <nav className="navbar navbar-expand-md nav-dark bg-dark">
-                         <div><a className="navbar-brand">User Management App</a></div>
+                         <div><a href="/"className="navbar-brand">User Management App</a></div>
                     </nav>
                 </header> 
             </div>
