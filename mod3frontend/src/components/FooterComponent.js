@@ -16,7 +16,7 @@ class FooterComponent extends React.Component {
         return(
             <div>
                <footer className = "footer">
-                    <span className = "text-muted"> Mod 3 Project 2021 </span>
+                    <span className = "text-muted "> Mod 3 Project 2021 </span>
                </footer>
             </div>
         )

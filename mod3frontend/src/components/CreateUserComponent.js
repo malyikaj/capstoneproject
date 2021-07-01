@@ -58,32 +58,32 @@ class CreateUserComponent extends React.Component {
                             <div className = "card-body">
                                 <form>
                                     <div className = "form-group">
-                                        <label>First Name : </label>
-                                        <input placeholder="" name="firstName" className="form-control"
+                                        <label></label>
+                                        <input placeholder="First Name" name="firstName" className="form-control"
                                          value ={this.state.firstName} onChange={this.changeFirstNameHandler} />
                                     </div>
                                     <br>
 
                                     </br>
                                     <div className = "form-group">
-                                        <label>Last Name : </label>
-                                        <input placeholder="" name="lastName" className="form-control"
+                                        <label></label>
+                                        <input placeholder="Last Name" name="lastName" className="form-control"
                                          value ={this.state.lastName} onChange={this.changeLastNameHandler} />
                                     </div>
                                     <br>
 
                                     </br>
                                     <div className = "form-group">
-                                        <label>User Name : </label>
-                                        <input placeholder="" name="userName" className="form-control"
+                                        <label></label>
+                                        <input placeholder="User Name" name="userName" className="form-control"
                                          value ={this.state.userName} onChange={this.changeUserNameHandler} />
                                     </div>
                                     <br>
 
                                     </br>
                                     <div className = "form-group">
-                                        <label>User Email :</label>
-                                        <input placeholder="" name="userEmail" className="form-control"
+                                        <label></label>
+                                        <input placeholder="User Email" name="userEmail" className="form-control"
                                          value ={this.state.userEmail} onChange={this.changeUserEmailHandler} />
                                     </div>
                                     <br>
