@@ -14,18 +14,28 @@ This is responsive Spring Boot application based on MVC architecture with a REST
 The styling of this app relies on Bootstrap. It acceses a RESTful API from React using an axios (http library) and displays in a formatted view using CSS. It uses Router functionality.
  
 
-Backend 
+Backend:
+
  Uses MySql as a SQL database
+ 
  Uses Spring Tool Suite (STS) for Spring Boot application w/Maven as a build tool
+ 
  Uses Apache Tomcat as a web server
+ 
  Uses MVC architecture
+ 
  API
  
 
-Front End 
+Front End :
+
  Uses React with Router functionality
+ 
  Uses Bootstrap
+ 
  CSS
+ 
  Uses Axios
+ 
  API
  
