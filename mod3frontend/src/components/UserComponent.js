@@ -63,7 +63,7 @@ class UserComponent extends React.Component {
                                     <td>{user.last_name}</td>
                                     <td>{user.user_name}</td>
                                     <td>{user.user_email}</td>
-                                    <td><button id= {user.id} type="button" className="btn btn-outline-primary " onClick={this.deletePersons}>Remove</button></td>
+                                    <td><button id= {user.id} type="button" className="btn btn-outline-primary" onClick={this.deletePersons}>Remove</button></td>
                                 </tr>  
                             )
                             
